@@ -91,9 +91,9 @@ const placeForComment = document.querySelector("#list");
 const inputField = document.querySelector("#comment-input");
 
 comForm.addEventListener("submit", (e) => {
-    console.log(e);
+
     e.preventDefault();
-    console.log(inputField.value);
+
     let pComment = document.createElement("p");
     pComment.innerText = inputField.value;
     placeForComment.appendChild(pComment);
